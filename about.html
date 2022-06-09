@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <base href=".">
+    <title>JAK Lab</title>
+    <link rel="shortcut icon" type="image/x-icon" href="https://assets.squarespace.com/universal/default-favicon.ico">
+    <link rel="canonical" href="https://jaklab.io/">
+    <meta property="og:site_name" content="JAK Lab">
+    <meta property="og:title" content="JAK Lab">
+    <meta property="og:url" content="https://jaklab.io">
+    <meta property="og:type" content="website">
+    <meta itemprop="name" content="JAK Lab">
+    <meta itemprop="url" content="https://jaklab.io">
+    <meta name="twitter:title" content="JAK Lab">
+    <meta name="twitter:url" content="https://jaklab.io">
+    <meta name="twitter:card" content="summary">
+    <meta name="description" content="">
+
+    <link rel="stylesheet" href="css/responsive-nav.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/responsive-nav.js"></script>
+    <script src="js/header.js" type="text/javascript" defer></script>
+    <script src="js/nav.js" type="text/javascript" defer></script>
+</head>
+<body>
+<nav aria-label="Main Navigation" id="nav" class="nav-collapse">
+    <ul>
+        <li><a href="./">Home</a></li>
+        <li><a href="./research.html">Research</a></li>
+        <li><a href="./members.html">Members</a></li>
+        <li class="active"><a href="./about.html">About</a></li>
+    </ul>
+</nav>
+
+<div class="main">
+    <header class="main-header">
+        <div class="logo site-title" style="letter-spacing: 0;" data-content-field="site-title">
+            <a href="https://jaklab.io/">JAK Lab</a>
+        </div>
+        <button id="toggle" onclick="nav.toggle();" aria-hidden="false">Menu</button>
+    </header>
+    <main>
+        <header>
+            <h1>About</h1>
+        </header>
+        <div>
+
+            <img src="img/mount_sinai-in_relation_to_central_park.jpg"
+                 alt="Mount Sinai building - in relation to Central Park" class="full-width">
+            <img src="img/mount_sinai-exterior-from-south.jpg" alt="Mount Sinai building - exterior from south">
+            <span>We are located in The Leon and Norma Hess Center for Science and Medicine on the Upper East Side of Manhattan</span>
+            <img src="img/mount_sinai-logo.png" alt="Mount Sinai">
+
+            <address>
+                <div>
+                    The Leon and Norma Hess Center for Science and Medicine<br>
+                    1470 Madison Ave,<br> New York, NY 10029
+                </div>
+
+
+                <div>
+                    Administrative contact:<br>
+                    Morgan Pierce: <a href="mailto:morgan.pierce@mountsinai.org">morgan.pierce@mountsinai.org</a>
+                </div>
+                <div>
+                    Scientific inquiries:<br>
+                    Jalal Ahmed Khan: <a href="mailto:jalal.ahmed@mountsinai.org">jalal.ahmed@mountsinai.org</a>
+                </div>
+            </address>
+        </div>
+    </main>
+
+</div>
+
+<script>
+    let nav = responsiveNav("#nav", {insert: "before", customToggle: "#toggle"});
+</script>
+</body>
+</html>
