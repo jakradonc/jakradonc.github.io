@@ -26,9 +26,9 @@ body {
     -webkit-text-size-adjust: 100%;
     -ms-text-size-adjust: 100%;
     text-size-adjust: 100%;
-    background: #444 url("../img/debut_dark_@2X.png") repeat;
+    /*background: #444 url("../img/debut_dark_@2X.png") repeat;*/
     color: #666;
-    font: 400 100%/1.5 "Montserrat","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font: 400 120%/1.5 "Montserrat","Helvetica Neue",Helvetica,Arial,sans-serif;
     /*font-family: 'Montserrat', sans-serif;*/
     /*line-height: 1.5;*/
 }
@@ -83,12 +83,12 @@ a:active, a:hover {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     -webkit-overflow-scrolling: touch;
-    padding: 3em 3em;
-    position: fixed;
+    padding: 3em 1em;
+    /*position: fixed;*/
     overflow: hidden;
     overflow-y: scroll;
     border-top-left-radius: 5px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, .6);
+    /*box-shadow: 0 0 15px rgba(0, 0, 0, .6);*/
     top: .8em;
     right: 0;
     bottom: 0;
@@ -201,6 +201,14 @@ a:active, a:hover {
         background: rgba(0, 0, 0, .3);
     }
 
+    body {
+        background-image: url("../img/debut_dark_@2X.png");
+        -webkit-background-size: 200px 200px;
+        -moz-background-size: 200px 200px;
+        -o-background-size: 200px 200px;
+        background-size: 200px 200px;
+    }
+
     #toggle {
         -webkit-touch-callout: none;
         -webkit-user-select: none;
@@ -233,14 +241,6 @@ a:active, a:hover {
 }
 
 @media screen and (-webkit-min-device-pixel-ratio: 1.3), screen and (min--moz-device-pixel-ratio: 1.3), screen and (-o-min-device-pixel-ratio: 2 / 1), screen and (min-device-pixel-ratio: 1.3), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
-    body {
-        background-image: url("../img/debut_dark_@2X.png");
-        -webkit-background-size: 200px 200px;
-        -moz-background-size: 200px 200px;
-        -o-background-size: 200px 200px;
-        background-size: 200px 200px;
-    }
-
     #toggle {
         background-image: url("../img/hamburger-retina.gif");
         -webkit-background-size: 100px 100px;
@@ -251,12 +251,7 @@ a:active, a:hover {
     }
 }
 
-@media screen and (min-width: 76em) {
-    nav {
-        position: relative;
-        top: 100px;
-    }
-
+@media screen and (min-width: 40em) {
     .nav-collapse {
         width: 18em;
     }
@@ -264,6 +259,39 @@ a:active, a:hover {
     .main {
         width: auto;
         left: 18em;
+    }
+    body {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(12, 1fr);
+    }
+    .main-header {
+        position: absolute;
+        top: 42px;
+        left: 32px;
+    }
+    #nav {
+        position: absolute;
+        top: 100px;
+    }
+    .main {
+        grid-column: 2 / 13;
+        height: unset;
+    }
+
+
+
+    .nav-collapse a {
+        color: #999;
+        font-weight: 400;
+        border-bottom: 0;
+        border-top: 0;
+    }
+
+    .nav-collapse .active a {
+        font-weight: 700;
+        color: #333;
+        background: none;
     }
 }
 
@@ -310,3 +338,26 @@ img {
     grid-column: 6 / 12;
 }
 
+
+.main {
+    /*display: grid;*/
+}
+
+.research-columns {
+    display: inline-grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+.we-seek {
+    grid-column: 1 / 8;
+}
+img#bio-interface {
+    grid-column: 8 / 13;
+}
+
+#jalal-headshot {
+    margin-left: 0;
+}
+/*#jalal-headshot img {*/
+/*    position: absolute;*/
+/*    left: 0;*/
+/*}*/
