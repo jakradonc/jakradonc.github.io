@@ -4,6 +4,9 @@
     box-sizing: border-box;
 }
 
+html {
+    font-size: 14px;
+}
 body,
 div,
 h1,
@@ -51,7 +54,7 @@ h2 {
 }
 
 p {
-    float: left;
+    /* float: left; */
     width: 100%;
     margin-bottom: 1em;
 }
@@ -110,7 +113,7 @@ a:active, a:hover {
     background-color: rgba(0, 0, 0, .0);
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 769px) {
 .main::-webkit-scrollbar-thumb {
     border-radius: 0;
     background-color: rgba(0, 0, 0, .4);
@@ -180,7 +183,7 @@ a:active, a:hover {
     display: none;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 769px) {
     .js .nav-collapse {
         clip: rect(0 0 0 0);
         max-height: 0;
@@ -258,7 +261,7 @@ a:active, a:hover {
     }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 769px) {
     .nav-collapse {
         width: 18em;
     }
@@ -369,6 +372,7 @@ img#bio-interface {
 
 .member-with-image {
     padding-left: 240px;
+    margin-bottom: 24px;
     position: relative;
 }
 
@@ -422,4 +426,8 @@ li {
 
 ol, ul {
     padding-left: 0;
+}
+
+.lab-alumni {
+    margin-top: 24px;
 }
