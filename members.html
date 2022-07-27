@@ -30,10 +30,12 @@
 <body>
     <nav id="nav" aria-label="Main Navigation" class="nav-collapse">
         <ul>
-            <li><a href="./">Home</a></li>
-            <li><a href="./research.html">Research</a></li>
-            <li class="active"><a href="./members.html">Members</a></li>
-            <li><a href="./about.html">About</a></li>
+            <ul>
+                <!-- <li><a href="./">Home</a></li> -->
+                <li><a href="./">Research</a></li>
+                <li class="active"><a href="./members.html">Members</a></li>
+                <li><a href="./about.html">About</a></li>
+            </ul>
         </ul>
     </nav>
     <div class="main">
@@ -51,7 +53,7 @@
                 <img src="img/staff.jpg" alt="JAK Lab Staff hanging out on a rooftop" style="width: 40%;">
                 <h2>Research and Support Staff</h2>
                 <h3>Morgan Pierce – Administrative assistant</h3>
-                <section>
+                <section class="member-with-image">
                     <figure id="jalal-headshot">
                         <img src="img/jalal-headshot.jpg" alt="Jalal Ahmed" style="width: 20%;">
                         <figcaption>
@@ -149,16 +151,27 @@
                         </li>
                     </ol>
                 </section>
-                <h3>Postdoctoral Scholars</h3>
-                <section>
-
-                    <h3>Sheema Almozyan <abbr title="Doctor of philosophy">Ph.D.</abbr></h3>
+                <h2>Postdoctoral Scholars</h2>
+                <section class="member-with-image">
+                    <!-- <figure id="sheema-headshot">
+                        <img src="img/sheema-headshot.jpg" alt="Sheema Almozyan" style="width: 20%;"> -->
+                        <figcaption>
+                            <h3>Sheema Almozyan <abbr title="Doctor of philosophy">Ph.D.</abbr></h3>
+                        <!-- </figcaption>
+                    </figure> -->
+                   
                     <!-- <h4>Awards</h4>
 
                     <h4>Significant Publications</h4> -->
                 </section>
-                <section>
-                    <h3>Oscar Padilla <abbr title="medical doctor">M.D.</abbr></h3>
+                <section class="member-with-image">
+                    <figure id="oscar-headshot">
+                        <img src="img/padilla-headshot.jpg" alt="Oscar Padilla" style="width: 20%;">
+                        <figcaption>
+                            <h3>Oscar Padilla <abbr title="medical doctor">M.D.</abbr></h3>
+                        </figcaption>
+                    </figure>
+                    
                     <p>I completed both my Masters in Science and Doctorate in Medicine degrees at Tufts University
                         School of Medicine. While at Tufts, I participated in the Research Concentration Track, which
                         allowed me to perform basic research in HIV immunology and cancer cell biology with the HIV
@@ -191,8 +204,14 @@
 
                 </section>
 
-                <section>
-                    <h3>Janaki Nair</h3>
+                <section class="member-with-image">
+                    <figure id="janaki-headshot">
+                        <img src="img/janaki-headshot.jpg" alt="Janaki Nair" style="width: 20%;">
+                        <figcaption>
+                            <h3>Janaki Nair</h3>
+                        </figcaption>
+                    </figure>
+                    
                     <p>Janaki is a rising senior at Solon High School. Extremely interested in biology, Janaki pursues
                         her interests as the captain of her nationally ranked Science Olympiad team. Over the summer of
                         her junior year, she helped create a line of tumor cells for Dr. Ahmed's CAR T cell study,

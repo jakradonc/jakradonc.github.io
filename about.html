@@ -28,8 +28,8 @@
 <body>
 <nav aria-label="Main Navigation" id="nav" class="nav-collapse">
     <ul>
-        <li><a href="./">Home</a></li>
-        <li><a href="./research.html">Research</a></li>
+        <!-- <li><a href="./">Home</a></li> -->
+        <li><a href="./">Research</a></li>
         <li><a href="./members.html">Members</a></li>
         <li class="active"><a href="./about.html">About</a></li>
     </ul>
@@ -50,28 +50,36 @@
 
             <img src="img/mount_sinai-in_relation_to_central_park.jpg"
                  alt="Mount Sinai building - in relation to Central Park" class="full-width">
-            <img src="img/mount_sinai-exterior-from-south.jpg" alt="Mount Sinai building - exterior from south">
-            <span>We are located in The Leon and Norma Hess Center for Science and Medicine on the Upper East Side of Manhattan</span>
-            <img src="img/mount_sinai-logo.png" alt="Mount Sinai">
+            <div class="side-by-side">
+                
+                <div class="mount-sainai-exterior-text">
+                    <span >We are located in The Leon and Norma Hess Center for Science and Medicine on the Upper East Side of Manhattan</span>
+                    <img class="mount-sainai-logo" src="img/mount_sinai-logo.png" alt="Mount Sinai">
+                </div>
+                
+                <img class="mount-sainai-exterior" src="img/mount_sinai-exterior-from-south.jpg" alt="Mount Sinai building - exterior from south">
+            </div>
 
             <address>
                 <div>
                     The Leon and Norma Hess Center for Science and Medicine<br>
                     1470 Madison Ave,<br> New York, NY 10029
                 </div>
-
-
                 <div>
-                    Administrative contact:<br>
+                    <strong>Administrative contact:</strong><br>
                     Morgan Pierce: <a href="mailto:morgan.pierce@mountsinai.org">morgan.pierce@mountsinai.org</a>
                 </div>
                 <div>
-                    Scientific inquiries:<br>
+                    <strong>Scientific inquiries:</strong><br>
                     Jalal Ahmed Khan: <a href="mailto:jalal.ahmed@mountsinai.org">jalal.ahmed@mountsinai.org</a>
                 </div>
             </address>
         </div>
-        <iframe width="520" height="300" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" id="gmap_canvas" src="https://maps.google.com/maps?width=520&height=300&hl=en&q=1470%20Madison%20Ave%20New%20York+(The%20Leon%20and%20Norma%20Hess%20Center%20for%20Science%20and%20Medicine)&t=&z=12&ie=UTF8&iwloc=B&output=embed"></iframe> <a href='https://embed-map.org/'>add google map to website</a> <script type='text/javascript' src='https://embedmaps.com/google-maps-authorization/script.js?id=f79b3bbe343c10e3b7fa0a4e229cca389c47f141'></script>
+        <div id="map">
+        <iframe width="520" height="300" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" id="gmap_canvas" src="https://maps.google.com/maps?width=520&height=300&hl=en&q=1470%20Madison%20Ave%20New%20York+(The%20Leon%20and%20Norma%20Hess%20Center%20for%20Science%20and%20Medicine)&t=&z=12&ie=UTF8&iwloc=B&output=embed"></iframe> 
+        <a href='https://embed-map.org/'>add google map to website</a> 
+        </div>
+        <script type='text/javascript' src='https://embedmaps.com/google-maps-authorization/script.js?id=f79b3bbe343c10e3b7fa0a4e229cca389c47f141'></script>
     </main>
 
 </div>
