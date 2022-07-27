@@ -416,7 +416,10 @@ address div {
     padding-right: 2rem;
 }
 
-li, ul {
+li {
     list-style-type: none;
+}
+
+ol, ul {
     padding-left: 0;
 }
