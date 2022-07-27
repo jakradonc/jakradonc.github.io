@@ -228,6 +228,8 @@ a:active, a:hover {
         display: block;
         width: 70px;
         height: 55px;
+        width: 58px;
+        height: 58px;
         float: right;
         margin: 0 -2em 1em 0;
         text-indent: -9999px;
@@ -263,12 +265,12 @@ a:active, a:hover {
 
 @media screen and (min-width: 769px) {
     .nav-collapse {
-        width: 18em;
+        width: 14em;
     }
 
     .main {
         width: auto;
-        left: 18em;
+        left: 14em;
     }
     body {
         display: grid;
@@ -302,6 +304,17 @@ a:active, a:hover {
         font-weight: 700;
         color: #333;
         background: none;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .nav-collapse {
+        width: 18em;
+    }
+
+    .main {
+        width: auto;
+        left: 18em;
     }
 }
 
