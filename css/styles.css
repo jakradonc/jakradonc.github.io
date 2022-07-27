@@ -415,3 +415,8 @@ address div {
     justify-content: space-between;
     padding-right: 2rem;
 }
+
+li, ul {
+    list-style-type: none;
+    padding-left: 0;
+}
