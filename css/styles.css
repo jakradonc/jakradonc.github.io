@@ -1,11 +1,37 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
+@font-face {
+    font-family: "ProximaNova";
+    src: url(../fonts/proxima-nova/ProximaNova-Regular.otf) format("opentype");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "ProximaNova";
+    src: url(../fonts/proxima-nova/ProximaNova-Bold.otf) format("opentype");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "ProximaNova";
+    src: url(../fonts/proxima-nova/ProximaNova-Semibold-Italic.otf) format("opentype");
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "ProximaNova";
+    src: url(../fonts/proxima-nova/ProximaNova-Bold-Italic.otf) format("opentype");
+    font-weight: bold;
+    font-style: italic;
+}
+
+
 *, *::after, *::before {
     box-sizing: border-box;
 }
 
 html {
-    font-size: 14px;
+    font-size: 16px;
 }
 body,
 div,
@@ -31,9 +57,10 @@ body {
     text-size-adjust: 100%;
     /*background: #444 url("../img/debut_dark_@2X.png") repeat;*/
     color: #666;
-    font: 400 120%/1.5 "Montserrat","Helvetica Neue",Helvetica,Arial,sans-serif;
-    /*font-family: 'Montserrat', sans-serif;*/
-    /*line-height: 1.5;*/
+    font-family: "Montserrat","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: "ProximaNova", 'Montserrat', sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
 }
 
 h1 {
